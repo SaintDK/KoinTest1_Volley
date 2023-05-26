@@ -6,9 +6,9 @@ import com.android.volley.Request
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 
-class VolleyRequest() {
+class VolleyRequest1() {
 
-    fun makeApiRequest(context: Context) {
+    fun makeApiRequest1(context: Context) {
 
         val url = "https://lookup.binlist.net/45717362"
         val queue = Volley.newRequestQueue(context)
@@ -18,11 +18,11 @@ class VolleyRequest() {
 
             { response ->
                 // Обработка ответа от API
-                Log.d("API111", response)
+                Log.d("API222", response)
             },
             { error ->
                 // Обработка ошибки
-                Log.e("API111", error.toString())
+                Log.e("API222", error.toString())
             })
 
         queue.add(stringRequest)
